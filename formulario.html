@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de inscripción</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F4F9FF;
+      color: #0D1F33;
+      padding: 2rem;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #227BCE;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #227BCE;
+      color: white;
+      margin-top: 1.5rem;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #1a5ca0;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/porencimadelaro3x3@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="https://porencimadelaro3x3.github.io/gracias.html">
+    <h1>Formulario de inscripción</h1>
+
+    <label>Nombre del equipo:</label>
+    <input type="text" name="nombre_equipo" required>
+
+    <label>Número de jugadores:</label>
+    <select name="numero_jugadores" required>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <label>Nombre del capitán:</label>
+    <input type="text" name="nombre_capitan" required>
+
+    <label>Nombres de los jugadores extra:</label>
+    <textarea name="jugadores_extras" rows="3" required></textarea>
+
+    <label>Teléfono del capitán:</label>
+    <input type="tel" name="telefono" required>
+
+    <label>Correo electrónico del capitán:</label>
+    <input type="email" name="email" required>
+
+    <input type="submit" value="Enviar inscripción">
+  </form>
+</body>
+</html>
